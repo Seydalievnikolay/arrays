@@ -69,17 +69,10 @@ public class Main {
     public static void task4(){
         System.out.println("Задача4");
         int [] numbers = {1, 2, 3};
-        numbers[0] = 1;
-        int numberOne = numbers[0];
-        numbers[1] = 2;
-        int numberTwo = numbers[1];
-        numbers[2] = 3;
-        int numberThree = numbers[2];
-        System.out.println(Arrays.toString(numbers));
-        for (numbers=0; numbers <= 1; numbers++) {
-            System.out.println(numbers[0] + "," + numbers[1] + ", " + numbers[2]);
-
-
+        for (int i = 0; i < numbers.length; i++){
+            if (numbers[i] != 2){
+            numbers[i]=numbers[i]+1;
+            System.out.println(numbers[i]);}
         }
     }
 }
